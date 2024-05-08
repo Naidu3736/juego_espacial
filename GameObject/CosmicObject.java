@@ -11,12 +11,12 @@ public abstract class CosmicObject {
     protected int speed;
     protected int damage;
 
-    public CosmicObject() { // hola mundo
+    public CosmicObject() {
     }
 
     public CosmicObject(Vector2D position, BufferedImage texture) {
         this.position = position;
-        this.texture = texture;
+        this.texture = texture; // añlsdkjfñal
     }
 
     public BufferedImage getTexture() {
