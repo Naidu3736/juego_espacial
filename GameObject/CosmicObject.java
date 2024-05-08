@@ -11,7 +11,7 @@ public abstract class CosmicObject {
     protected int speed;
     protected int damage;
 
-    public CosmicObject() {
+    public CosmicObject() { // hola mundo
     }
 
     public CosmicObject(Vector2D position, BufferedImage texture) {
