@@ -2,8 +2,11 @@ package GameObject;
 
 import java.awt.image.BufferedImage;
 
+import Math.Vector2D;
+
 public abstract class CosmicObject {
     protected BufferedImage texture;
+    protected Vector2D position;
     protected int distance;
     protected int speed;
     protected int damage;
