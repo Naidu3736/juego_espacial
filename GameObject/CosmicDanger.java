@@ -21,23 +21,4 @@ public class CosmicDanger extends CosmicObject {
         // Actualizar la posición basándose en la velocidad y el tiempo transcurrido
         this.distance += this.speed; // Suponiendo que el tiempo es discreto y la velocidad es constante
     }
-
-    @Override
-    public void interact(Spacecraft spacecraft) {
-        // Calcula la distancia entre la nave espacial y este objeto cósmico
-        int distanceToSpacecraft = Math.abs(this.distance - spacecraft.getDistance());
-
-        // Verifica si la nave está dentro de un cierto rango de este objeto cósmico y aplica efectos en consecuencia
-        if (distanceToSpacecraft <= INTERACTION_DISTANCE_THRESHOLD) {
-            // Aplica los efectos en la nave espacial
-            spacecraft.lifeCapsules -= lifeCapsulesPenalty;
-            spacecraft.missiles -= missilesPenalty;
-
-            // Registra la interacción en el registro de eventos del juego
-            System.out.println("Interacción con " + getClass().getSimpleName() + " en distancia: " + distanceToSpacecraft);
-        } else {
-            // Emitir un mensaje indicando que la nave espacial está fuera de rango de interacción
-            System.out.println("Nave espacial está fuera de rango de interacción con " + getClass().getSimpleName());
-        }
-    }
 }

@@ -27,14 +27,4 @@ public class Spacecraft extends CosmicObject {
     public int getMissiles() {
         return missiles;
     }
-
-    @Override
-    public void update() {
-
-    }
-
-    @Override
-    public void draw(Graphics g) {
-        g.drawImage(texture, (int)position.getX(), (int)position.getY(), null);
-    }
 }
