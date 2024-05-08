@@ -43,5 +43,5 @@ public abstract class CosmicObject {
         return damage;
     }
 
-
+    public void getañldsk () {}
 }
