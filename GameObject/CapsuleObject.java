@@ -9,15 +9,4 @@ public class CapsuleObject extends InterestObject {
     public int getCapsules() {
         return capsules;
      }
-
-    @Override
-    public void interact(Spacecraft spacecraft) {
-        System.out.println("Interacción con cápsula en distancia: " + distance);
-        if (spacecraft != null) {
-            spacecraft.lifeCapsules += capsules;
-            System.out.println("¡La nave espacial ha capturado la cápsula!");
-        } else {
-            System.out.println("¡Error! La referencia a la nave espacial es nula.");
-        }
-    }
 }
