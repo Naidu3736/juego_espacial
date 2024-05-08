@@ -10,12 +10,30 @@ public abstract class CosmicObject {
     protected int distance;
     protected int speed;
     protected int damage;
-    protected int missilesPenalty;
 
     public CosmicObject() {
     }
 
-    public abstract void interact(Spacecraft spacecraft);
+    public CosmicObject(Vector2D position, BufferedImage texture) {
+        this.position = position;
+        this.texture = texture;
+    }
+
+    public BufferedImage getTexture() {
+        return texture;
+    }
+
+    public void setTexture(BufferedImage texture) {
+        this.texture = texture;
+    }
+
+    public Vector2D getPosition() {
+        return position;
+    }
+
+    public void setPosition(Vector2D position) {
+        this.position = position;
+    }
 
     public int getDistance() {
         return distance;
@@ -25,7 +43,5 @@ public abstract class CosmicObject {
         return damage;
     }
 
-    public int getMissilesPenalty() {
-        return missilesPenalty;
-    }
+
 }
