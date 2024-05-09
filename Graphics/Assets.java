@@ -26,10 +26,12 @@ public class Assets {
 	
 	public static BufferedImage laser;
 	
-	// Meteors
+	// CosmicDanger
 	
 	public static BufferedImage[] meteors = new BufferedImage[2];
-	
+    public static BufferedImage[] blackHole = new BufferedImage[2];
+    public static BufferedImage[] planet = new BufferedImage[2];
+;	
 	// numbers
 	
 	public static BufferedImage[] numbers = new BufferedImage[11];
@@ -49,7 +51,7 @@ public class Assets {
 	{
 		speed = loadImage("/effects/fire08.png");
 		
-		blueLaser = loadImage("/lasers/laserBlue01.png");
+		laser = loadImage("//laserBlue01.png");
 		
 		greenLaser = loadImage("/lasers/laserGreen11.png");
 		
