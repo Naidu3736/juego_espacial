@@ -13,13 +13,10 @@ public class Assets {
 	
 	
 	public static BufferedImage player;
-	public static BufferedImage doubleGunPlayer;
 	
 	// effects
 	
 	public static BufferedImage speed;
-	
-	public static BufferedImage[] shieldEffect = new BufferedImage[3];
 	
 	// explosion
 	
@@ -27,31 +24,17 @@ public class Assets {
 	
 	// lasers
 	
-	public static BufferedImage blueLaser, greenLaser, redLaser;
+	public static BufferedImage laser;
 	
 	// Meteors
 	
-	public static BufferedImage[] bigs = new BufferedImage[4];
-	public static BufferedImage[] meds = new BufferedImage[2];
-	public static BufferedImage[] smalls = new BufferedImage[2];
-	public static BufferedImage[] tinies = new BufferedImage[2];
-	
-	// ufo
-	
-	public static BufferedImage ufo;
+	public static BufferedImage[] meteors = new BufferedImage[2];
 	
 	// numbers
 	
 	public static BufferedImage[] numbers = new BufferedImage[11];
 	
 	public static BufferedImage life;
-	
-	// fonts
-	
-	public static Font fontBig;
-	public static Font fontMed;
-	
-	public static Clip backgroundMusic, explosion, playerLoose, playerShoot, ufoShoot, powerUp;
 	
 	// ui
 	
@@ -60,13 +43,10 @@ public class Assets {
 	
 	// power ups
 	
-	public static BufferedImage orb, doubleScore, doubleGun, fastFire, shield, star;
+	public static BufferedImage gunCadence, shipSpeed, shipReduceSpeed, shipHealth;
 	
 	public static void init()
 	{
-		player = loadImage("/ships/player.png");
-		doubleGunPlayer = loadImage("/ships/doubleGunPlayer.png");
-		
 		speed = loadImage("/effects/fire08.png");
 		
 		blueLaser = loadImage("/lasers/laserBlue01.png");
